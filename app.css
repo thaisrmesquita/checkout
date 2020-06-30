@@ -12,6 +12,11 @@ h6 {
   box-sizing: border-box;
   font-size: initial;
 }
+textarea:focus,
+input:focus,
+select:focus {
+  outline: 0;
+}
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -191,6 +196,13 @@ form {
   padding: 11px 20px 11px 50px;
   background-color: transparent;
 }
+item-icon {
+}
+.icon {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 18px;
+}
 .button-submit {
   text-align: center;
   font-family: "Raleway" !important;
@@ -206,6 +218,9 @@ form {
   text-transform: uppercase;
 }
 
+.button-submit:hover {
+  background-color: #00a8ff;
+}
 .controls.btn {
   text-align: center;
 }
@@ -330,6 +345,10 @@ footer {
 }
 
 @media (min-width: 750px) {
+  .icon {
+    margin-left: 15px;
+    font-size: 20px;
+  }
   .container-banners-responsivo {
     display: none;
   }
